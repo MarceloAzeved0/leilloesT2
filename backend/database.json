@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Gabriel Brunichaki",
+      "email": "gabriel.brunichaki@acad.pucrs.br"
+    },
+    {
+      "id": 2,
+      "name": "Marcelo Bernardy",
+      "email": "marcelo.bernardy@acad.pucrs.br"
+    }
+  ],
+  "loans": []
+}

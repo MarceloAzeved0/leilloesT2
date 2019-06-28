@@ -1,13 +1,11 @@
-import React from 'react'
-import { Router, Route, Redirect, hashHistory } from 'react-router'
+import React from 'react';
+import { Switch, Route, Redirect } from 'react-router';
+import Home from '../components/home/Home';
+import Leilao from '../components/leilao/Leilao';
 
-import Todo from '../todo/todo'
-import About from '../about/about'
-
-export default props => (
-    <Router history={hashHistory}>
-        <Route path='/todos' component={Todo} />
-        <Route path='/about' component={About} />
-        <Redirect from='*' to='/todos' />
-    </Router>
-)
+export default props =>
+  <Switch>
+    <Route exact path='/' component={Home} />
+    <Route exact path='/leilao' component={Leilao} />
+    <Redirect from ='*' to='/' />
+  </Switch>
